@@ -15,12 +15,12 @@ addButton.addEventListener('click', function() {
         const newItem = document.createElement('li');
         newItem.textContent = newItemText;
         bucketList.appendChild(newItem);
-        itemInput.value = ''; // Clear the input field
+        itemInput.value = ''; // Clears the input field
     }
 });
 
 bucketList.addEventListener('click', function(event) {
     if (event.target.tagName === 'LI') {
-        bucketList.removeChild(event.target); // Remove the clicked item
+        bucketList.removeChild(event.target); // Removes the clicked item
 }
 });
